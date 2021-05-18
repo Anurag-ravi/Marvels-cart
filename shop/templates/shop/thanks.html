@@ -1,0 +1,26 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} Thank You {% endblock %}
+
+{% block body %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong><h6>Your Order Have Been Placed Sucessfully</h6></strong>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+<hr>
+<div align="center">
+      <h3>Thank you for shopping with us</h3>
+    </div>
+    <div align="center" class="p-3 mb-1 bg-success bg-gradient text-white">
+      <a class="nav-item nav-link" href="{% url 'ShopHome'%}"
+                ><button class="btn btn-primary">Continue Shopping</button></a>
+            <a class="nav-item nav-link" href="{% url 'Logout' %}"
+                ><button class="btn btn-danger">Logout</button></a>
+    </div>
+
+{% endblock %}

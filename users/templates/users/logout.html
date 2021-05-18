@@ -1,0 +1,18 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} Succesfully Logged Out {% endblock %}
+
+{% block body %}
+<div align="center" class="mt-2">
+      <h3> You have been Logged out Successfully</h3>
+    </div>
+    
+        
+        <div align="center" class="border-top pt-3 container">
+            
+            <a class="nav-item nav-link" href="{% url 'Login'%}"
+                    ><button class="btn btn-primary">Login again</button></a>
+            
+        </div>
+    
+{% endblock %}

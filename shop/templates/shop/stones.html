@@ -1,0 +1,364 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} Stones {% endblock %}
+
+{% block body %}
+    <div class="container-fluid row mt-2">
+        <div class="col-3">
+            <div class="card">
+                <img src="/media/{{product.22.image}}" class="card-img-top" alt="..." />
+                <div class="card-body">
+                <h5 class="card-title">{{product.22.product_name}}</h5>
+                <h6 class="card-text">Rs : {{product.22.price}}</h6>
+                <p class="card-text">{{product.22.desc}}</p>
+                {% if user.is_authenticated %}
+                <a href="{% url 'ShopThank'%}" class="btn btn-primary">Buy Now</a>
+                {% else %}
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                >
+                    Buy now
+                </button>
+
+                <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        </div>
+                        <div class="modal-body">Please Login to Shop from us!</div>
+                        <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <a href="{% url 'Login'%}"
+                            ><button type="button" class="btn btn-primary">
+                            Log in
+                            </button></a
+                        >
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img src="/media/{{product.23.image}}" class="card-img-top" alt="..." />
+                <div class="card-body">
+                <h5 class="card-title">{{product.23.product_name}}</h5>
+                <h6 class="card-text">Rs : {{product.23.price}}</h6>
+                <p class="card-text">{{product.23.desc}}</p>
+                {% if user.is_authenticated %}
+                <a href="{% url 'ShopThank'%}" class="btn btn-primary">Buy Now</a>
+                {% else %}
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                >
+                    Buy now
+                </button>
+
+                <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        </div>
+                        <div class="modal-body">Please Login to Shop from us!</div>
+                        <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <a href="{% url 'Login'%}"
+                            ><button type="button" class="btn btn-primary">
+                            Log in
+                            </button></a
+                        >
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img src="/media/{{product.24.image}}" class="card-img-top" alt="..." />
+                <div class="card-body">
+                <h5 class="card-title">{{product.24.product_name}}</h5>
+                <h6 class="card-text">Rs : {{product.24.price}}</h6>
+                <p class="card-text">{{product.24.desc}}</p>
+                {% if user.is_authenticated %}
+                <a href="{% url 'ShopThank'%}" class="btn btn-primary">Buy Now</a>
+                {% else %}
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                >
+                    Buy now
+                </button>
+
+                <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        </div>
+                        <div class="modal-body">Please Login to Shop from us!</div>
+                        <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <a href="{% url 'Login'%}"
+                            ><button type="button" class="btn btn-primary">
+                            Log in
+                            </button></a
+                        >
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img src="/media/{{product.25.image}}" class="card-img-top" alt="..." />
+                <div class="card-body">
+                <h5 class="card-title">{{product.25.product_name}}</h5>
+                <h6 class="card-text">Rs : {{product.25.price}}</h6>
+                <p class="card-text">{{product.25.desc}}</p>
+                {% if user.is_authenticated %}
+                <a href="{% url 'ShopThank'%}" class="btn btn-primary">Buy Now</a>
+                {% else %}
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                >
+                    Buy now
+                </button>
+
+                <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        </div>
+                        <div class="modal-body">Please Login to Shop from us!</div>
+                        <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <a href="{% url 'Login'%}"
+                            ><button type="button" class="btn btn-primary">
+                            Log in
+                            </button></a
+                        >
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid row mt-2">
+        <div class="col-3">
+            <div class="card">
+                <img src="/media/{{product.26.image}}" class="card-img-top" alt="..." />
+                <div class="card-body">
+                <h5 class="card-title">{{product.26.product_name}}</h5>
+                <h6 class="card-text">Rs : {{product.26.price}}</h6>
+                <p class="card-text">{{product.26.desc}}</p>
+                {% if user.is_authenticated %}
+                <a href="{% url 'ShopThank'%}" class="btn btn-primary">Buy Now</a>
+                {% else %}
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                >
+                    Buy now
+                </button>
+
+                <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        </div>
+                        <div class="modal-body">Please Login to Shop from us!</div>
+                        <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <a href="{% url 'Login'%}"
+                            ><button type="button" class="btn btn-primary">
+                            Log in
+                            </button></a
+                        >
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img src="/media/{{product.27.image}}" class="card-img-top" alt="..." />
+                <div class="card-body">
+                <h5 class="card-title">{{product.27.product_name}}</h5>
+                <h6 class="card-text">Rs : {{product.27.price}}</h6>
+                <p class="card-text">{{product.27.desc}}</p>
+                {% if user.is_authenticated %}
+                <a href="{% url 'ShopThank'%}" class="btn btn-primary">Buy Now</a>
+                {% else %}
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                >
+                    Buy now
+                </button>
+
+                <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        </div>
+                        <div class="modal-body">Please Login to Shop from us!</div>
+                        <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <a href="{% url 'Login'%}"
+                            ><button type="button" class="btn btn-primary">
+                            Log in
+                            </button></a
+                        >
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

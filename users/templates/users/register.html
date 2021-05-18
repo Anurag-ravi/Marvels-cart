@@ -1,0 +1,22 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} Register Now {% endblock %}
+
+{% block body %}
+    <div class="content-section container">
+        <form method="POST">
+            {% csrf_token%}
+            <fieldset class="form-group container">
+                <legend class="border-bottom mb-3">Register Now</legemd>
+                {{ form.as_p }}
+            </fieldset>
+            <button class="btm btn-outline-primary" type="submit">Sign Up</button>
+            
+        </form>
+        <div class="border-top pt-3">
+            <p class ="text muted">
+                Already have an Account! <a class="ml-3" href="{% url 'Login'%}">Sign In</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}
